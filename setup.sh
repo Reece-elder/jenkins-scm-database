@@ -45,10 +45,3 @@ elif [ -n "$(sudo docker ps -q -f status=exited -f name=mysql)" ]; then
 fi
 run_sql_scripts
 
-INSERT INTO Books (
-        Name, Author, Image
-) VALUES (
-        "Harry Potter and the Philosopher's Stone",
-        "J.K. Rowling",
-        "https://books.google.com/books/content/images/frontcover/39iYWTb6n6cC?fife=w200-h300"
-);
